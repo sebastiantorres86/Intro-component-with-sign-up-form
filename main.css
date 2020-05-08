@@ -1193,55 +1193,114 @@ small {
 /*# sourceMappingURL=main.css.map */
 
 /*Form Control Styles*/
-.form-control {
-  position: relative;
+
+@media screen and (min-width: 600px) {
+  .form-control {
+    position: relative;
+  }
+  
+  .form-control i.fa-exclamation-circle {
+    font-size: 1.5rem;
+    color: hsl(0, 100%, 74%);
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    visibility: hidden;
+  }
+  
+  .form-control i.fa-check-circle {
+    font-size: 1.5rem;
+    color: hsl(154, 59%, 51%);
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    visibility: hidden;
+  }
+  
+  .form-control small {
+    position: absolute;
+    top: 57px;
+    right: 2px;
+    font-size: 10px;
+    font-style: italic;
+    color: hsl(0, 100%, 74%);
+    visibility: hidden;
+  }
+  
+  .form-control.error input {
+    border-color: hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+  } 
+  
+  .form-control.success input {
+    color: hsl(154, 59%, 51%);
+  }
+  
+  .form-control.error i.fa-exclamation-circle {
+    visibility: visible;
+  }
+  
+  .form-control.success i.fa-check-circle {
+    visibility: visible;
+  }
+  
+  .form-control.error small {
+    visibility: visible;
+  }
 }
 
-.form-control i.fa-exclamation-circle {
-  font-size: 1.5rem;
-  color: hsl(0, 100%, 74%);
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  visibility: hidden;
-}
-
-.form-control i.fa-check-circle {
-  font-size: 1.5rem;
-  color: hsl(154, 59%, 51%);
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  visibility: hidden;
-}
-
-.form-control small {
-  position: absolute;
-  top: 57px;
-  right: 2px;
-  font-size: 10px;
-  font-style: italic;
-  color: hsl(0, 100%, 74%);
-  visibility: hidden;
-}
-
-.form-control.error input {
-  border-color: hsl(0, 100%, 74%);
-  color: hsl(0, 100%, 74%);
-} 
-
-.form-control.success input {
-  color: hsl(154, 59%, 51%);
-}
-
-.form-control.error i.fa-exclamation-circle {
-  visibility: visible;
-}
-
-.form-control.success i.fa-check-circle {
-  visibility: visible;
-}
-
-.form-control.error small {
-  visibility: visible;
+@media screen and (max-width: 599px) {
+  .form-control {
+    position: relative;
+  }
+  
+  .form-control i.fa-exclamation-circle {
+    font-size: 1.5rem;
+    color: hsl(0, 100%, 74%);
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    visibility: hidden;
+  }
+  
+  .form-control i.fa-check-circle {
+    font-size: 1.5rem;
+    color: hsl(154, 59%, 51%);
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    visibility: hidden;
+  }
+  
+  .form-control small {
+    position: absolute;
+    top: 42px;
+    right: 2px;
+    font-size: 10px;
+    font-style: italic;
+    color: hsl(0, 100%, 74%);
+    visibility: hidden;
+  }
+  
+  .form-control.error input {
+    border-color: hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+  } 
+  
+  .form-control.success input {
+    color: hsl(154, 59%, 51%);
+  }
+  
+  .form-control.error i.fa-exclamation-circle {
+    visibility: visible;
+  }
+  
+  .form-control.success i.fa-check-circle {
+    visibility: visible;
+  }
+  
+  .form-control.error small {
+    visibility: visible;
+  }
+  
 }
